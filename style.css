@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+/*
+Theme Name: Child Theme of TwentyTen 1.1
+Theme URI: http://libraries.mit.edu/sites/exhibits/
+Description: Child theme for Exhibits site
+Author: Darcy Duke
+Template: twentyten
+*/
+
+@import url("../twentyten/style.css");
+
+/*This makes it our font set and re-sets the background color*/
+body {
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+background-color: #D0D0B9;
+}
+
+a:link, a:visited {
+	text-decoration:none;
+/*	color:#667eae;*/
+	color:#0066CC;
+/*	color:#2851A2;*/
+}
+
+a:active, a:hover {
+	text-decoration: underline;
+}
+
+/*This makes the font size work better for our font set*/
+#content, #content input, #content textarea {
+font-size:1.2em;
+}
+
+
+/*This allows the pages without sidebars to fill up more of the space*/
+.one-column #content {
+	margin: 0 auto;
+	width: 95%;
+}
+
+/*This allows an embedded video to have text wrap next to it.  Note: you must apply this class to a div around the object code - I found if I applied it to the object itself in HTML editing mode, it would disappear if I edited the page again in Visual mode. */
+.video {
+	float: right;
+	padding-left: 20px;
+}
+
+/*Creates a higlighting box for text - used to highlight current exhibits.*/
+.box {
+	background: #f1f1f1;
+	border: thin  dotted;  
+	padding: 1em;
+	margin: 2em;
+	overflow: auto;
+}
+
+/*This hides the author and date under the header on the images pages.*/
+.meta-prep, .entry-date, .meta-sep, .author.vcard {
+	display:none;
+}
+
+/*This hides the WordPRess links in the footer*/
+#site-generator {
+	display:none;
+}
+
+/*This formats the table used on the home page*/
+.wp-table-reloaded {
+    font-size: 10pt;
+	font-weight:
+}
+
+/*This is used with images and the next/previous buttons to eliminate any residual floating.*/
+.c-l-ear { 
+	clear:both; 
+} 
+
+/*This makes sure that <ul>s in the sidebar widgets have a proper margin at the bottom*/
+#main .widget-area ul ul {
+	margin-bottom: 18px;
+}
+
+/*This gives the titles of widgets a better and more consistent font size between browsers, and also gives a little space between the title and the content below it*/
+.widget-title {
+    font-size: 1.3em;
+	margin-bottom: .4em;
+}
+
+/*This hides the site link in the footer, to put the dome logo in instead.*/
+#site-info a {
+    display:none;
+}
+
+
+
+
+
+
+
+
+
+
